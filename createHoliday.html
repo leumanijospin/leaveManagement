@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Create Holiday</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="lg:bg-neutral-600">
+    <section>
+        <header class="flex flex-col gap-y-4 lg:h-20 lg:gap-y-1.5">
+            <div class="flex px-4 justify-between py-2 lg:py-1">
+                <div class="w-1/12 h-2 text-black font-bold">12:30</div>
+                <div class="flex gap-x-1">
+                    <img class="w-4 h-3" src="/icons/battery_30_FILL0_wght400_GRAD0_opsz48.png" alt="battery">
+                    <img class="w-4 h-3" src="/icons/signal_cellular_4_bar_FILL0_wght400_GRAD0_opsz48.png" alt="network">
+                    <img class="w-4 h-3" src="/icons/images.png" alt="wifi"> 
+                 </div>
+            </div>
+              <div class="flex flex-col gap-y-0.5 lg:px-96 lg:py-4 z-0">
+                <div class="flex justify-between px-8">
+                    <h1 class="font-serif font-extrabold text-3xl">Logo</h1>
+                    <img class="w-6 h-6 lg:text-neutral-800 lg:w-10 lg:h-10" src="/icons/user.png" alt="user">
+                  </div>
+                  <h4 class="font-sans font-medium not-italic text-xs leading-snug text-gray-700 px-8 mb-4 lg:text-neutral-800">Monday january 10, 2022</h4>
+              </div>
+        </header>
+        <form class="flex flex-col gap-y-4 bg-zinc-100 items-center lg:max-w-[900px] lg:max-h-[833px] lg:border-6 lg:border lg:justify-center lg:rounded-2xl lg:mx-auto lg:shadow lg:shadow-2xl z-50" action="">
+                 <div class="my-4 lg:my-10">
+                    <h1 class="font-serif font-extrabold text-xl text-center lg:text-5xl">Create holiday</h1>
+                    <h6 class="w-70 text-xs text-zinc-500 lg:text-center lg:text-lg">Lorem ipsum dolor sit amet consectetur</h6>
+                 </div>
+               <div class="flex flex-col min-w-[320px] ">
+                   <label class="text-xs lg:text-base" for="">Type</label>
+                   <select  class="h-10 lg:w-[800px] lg:h-16 text-xs border rounded border-zinc-400 border-solid bg-blue-50 px-1 text-gray-400 lg:text-lg">
+                    <option  value="">choose your holiday's type...</option>
+                </select>
+               </div> 
+                <div class="flex gap-x-8">
+                       <div class="flex flex-col">
+                            <label class="text-xs lg:text-base" for="start">starting date</label>
+                            <input class="w-36 h-10 border rounded bg-blue-50 lg:w-96 lg:h-16" type="date" value="Date">
+                            </div>
+                        <div class="flex flex-col">
+                            <label class="text-xs lg:text-base" for="">Number of days</label>
+                            <input class="w-36 h-10 border rounded px-2 bg-blue-50 lg:w-96 lg:h-16 lg:text-lg" type="text" placeholder="18">           
+                        </div>
+                </div>
+                <div class="flex gap-x-8">
+                        <div class="flex flex-col">
+                            <label class="text-xs lg:text-base" for="start">Ending date</label>
+                            <input class="w-36 h-10 border rounded bg-blue-50 lg:w-96 lg:h-16" type="date" name="Date">
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="text-xs lg:text-base" for="start">Return date</label>
+                            <input class="w-36 h-10 border rounded bg-blue-50 lg:w-96 lg:h-16" type="date" name="Date">
+                       </div>
+                 </div>
+                <div class="flex flex-col min-w-[320px]">
+                        <label class="text-xs lg:text-base" for="">Description</label>
+                        <textarea class="border w-80 h-20 text-blue-50 rounded py-3 px-2 bg-blue-50 lg:w-[800px]  lg:h-36 lg:text-lg" name="" cols="30" rows="10" placeholder="veuillez saisir votre description..."></textarea>
+                </div>
+                  <button class=" min-w-[320px] h-11 shadow-blue-500  text-xm text-white rounded border-solid bg-blue-600 font-normal font-semibold shadow-xl shadow-blue-300 my-8 lg:w-[800px] lg:h-16 lg:text-2xl" type="submit">SUBMIT</button>  
+        </form>
+    </section>
+</body>
+</html>

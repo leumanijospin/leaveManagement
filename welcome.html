@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Welcome</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily: { 
+                  WorkSans: ["Work Sans"]
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <section>
+        <header class="flex flex-col gap-y-4">
+        <div class="flex px-4 justify-between py-2">
+            <div class="w-1/12 h-2 text-black font-bold">12:30</div>
+            <div class="flex gap-x-1">
+                <img class="w-4 h-3" src="/icons/battery_30_FILL0_wght400_GRAD0_opsz48.png" alt="battery">
+                <img class="w-4 h-3" src="/icons/signal_cellular_4_bar_FILL0_wght400_GRAD0_opsz48.png" alt="network">
+                <img class="w-4 h-3" src="/icons/images.png" alt="wifi"> 
+             </div>
+        </div>
+           <div class="flex flex-col gap-y-0.5 my-4">
+             <div class="flex justify-between px-8">
+              <h1 class="font-WorkSans font-bold text-3xl">Logo</h1>
+              <img class="w-6 h-6" src="/icons/user.png" alt="user">
+             </div>
+             <h4 class="font-sans font-medium not-italic text-xs leading-snug text-gray-700 px-8 ">Monday january 10, 2022</h4>
+           </div>
+        </header>
+              <form  class="h-screen bg-zinc-100" action="">
+                  <div class="flex flex-col gap-y-4 py-8">
+                       <h1 class="font-serif font-extrabold text-xl text-center">Hello, welcome to... </h1>
+                       <h6 class="text-xs font-normal font-mono text-center mx-4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                           Nisl eget conscectetur amet, quam. Amet mattis adipiscingin massa. At erat elementu</h6>                 
+                  </div>
+                  <div class="flex flex-col justify-center w-11/12 md:flex-row gap-4 md:w-7/12 mx-auto">
+                        <button  class="h-12 text-xs text-white rounded border-solid bg-blue-600 font-normal font-semibold shadow-2xl shadow-blue-700">
+                           <div class="flex gap-x-2 mx-2">
+                               <div class="w-4 h-4 rounder text-xs text-center text-white bg-blue-400">+</div>
+                               Create new holiday
+                          </div>
+                        </button>
+                        <button  class="h-12 text-xm text-blue-600 rounded border-solid bg-blue-100 font-normal font-semibold">
+                            <div class="flex gap-x-2 mx-2">
+                               <div class="w-6 h-6 rounder text-full text-center text-white bg-blue-400">+</div>
+                                Liste des conges
+                            </div>
+                        </button>
+                  </div>
+                  <div class="w-full flex justify-center">
+                    <img class="md:mx-auto" src="/icons/5805581 1.png" alt="">
+                  </div>
+              </form>
+    </section>
+</body>
+</html>
